@@ -16,7 +16,21 @@ export class CurtisStack {
   }
 
   /*
-  * This method returns the stack as a string.
+  * Checks if stack is empty.
+  */
+  public get isEmpty() {
+    return this.stackAsList.length == 0
+  }
+
+  /*
+  * returns stack size
+  */
+  public get size() {
+    return this.stackAsList.length
+  }
+  
+  /*
+  * returns the stack as a string
   */
   public get showStack() {
     let values = ""
@@ -28,14 +42,14 @@ export class CurtisStack {
   }
 
   /*
-  * This method pushes a string onto the stack.
+  * pushes a string onto the stack
   */
   public push(input) {
     this.stackAsList.push(input)
   }
 
   /*
-  * This method pops a string from the stack.
+  * pops a string from the stack
   */
   public popItem() {
     let poppedItem = ""
